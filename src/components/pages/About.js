@@ -10,6 +10,24 @@ export default function About() {
       <p>
         To propel my career as a Web Developer, I enrolled in the Coding Bootcamp at the University of Sydney.
       </p>
+      <p>
+        Technologies I've learned in the Bootcamp:
+      </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>React</li>
+        <li>CSS Frameworks (Bootstrap, Materialize)</li>
+        <li>APIs</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>MySQL, Sequelize</li>
+        <li>MongoDB, Mongoose</li>
+        <li>REST</li>
+        <li>GraphQL</li>
+      </ul>
     </div>
   );
 }
