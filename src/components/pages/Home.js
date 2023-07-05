@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../../public/heroImage.jpg'
+import heroImage from '../../assets/heroImage.jpg'
 
 export default function Home() {
   return (
