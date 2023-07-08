@@ -1,24 +1,72 @@
 import React from 'react';
+import Project from "./Project";
+import textEditor from "../../assets/text-editor.png";
+import ironStride from "../../assets/iron-stride.png";
+import marvelFanPage from "../../assets/marvelites.png";
+import weatherDashboard from "../../assets/weather-dashboard.png";
+import workDayScheduler from "../../assets/workday-scheduler.png";
+import codingQuizChallenge from "../../assets/quiz-challenge.png";
 
-export default function Blog() {
+const projects = [
+  {
+    name: "Text-Editor",
+    image: textEditor,
+    description: "",
+    link: "https://grethel-text-editor-cf2138c864a3.herokuapp.com/",
+    repo: "https://github.com/Garethus/text-editor",
+  },
+  {
+    name: "Iron-Stride",
+    image: ironStride,
+    description: "",
+    link: "https://iron-stride.herokuapp.com/login",
+    repo: "https://github.com/blancahidalgo/iron-stride",
+  },
+  {
+    name: "Marvelites-Fan-Page",
+    image: marvelFanPage,
+    description: "",
+    link: "https://voi-jankowski.github.io/marvel/",
+    repo: "https://github.com/voi-jankowski/marvel",
+  },
+  {
+    name: "Weather-Dashboard",
+    image: weatherDashboard,
+    description: "JavaScript/jQuery/HTML/CSS/Server-Side API/Web API",
+    link: "https://garethus.github.io/weather-dashboard/",
+    repo: "https://github.com/Garethus/weather-dashboard",
+  },
+  {
+    name: "Work-Day-Scheduler",
+    image: workDayScheduler,
+    description: "",
+    link: "https://garethus.github.io/work-day-scheduler/",
+    repo: "https://github.com/Garethus/work-day-scheduler",
+  },
+  {
+    name: "Coding-Quiz-Challenge",
+    image: codingQuizChallenge,
+    description: "JavaScript/HTML/CSS/Local-Storage API",
+    link: "https://garethus.github.io/04-web-apis/",
+    repo: "https://github.com/Garethus/04-web-apis",
+  },
+];
+
+export default function Portfolio() {
+
   return (
     <div>
-      <h1>Blog Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <div className="flex-row">
+        {projects.map((project) => (
+          <Project
+            title={project.title}
+            image={project.image}
+            description={project.description}
+            link={project.link}
+            repo={project.repo}
+          />
+        ))}
+      </div>
     </div>
   );
 }
