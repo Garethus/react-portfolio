@@ -20,36 +20,39 @@ export default function Contact() {
   };
 
   return (
-    <section>
-      <h2>Get In Touch</h2>
+    <section className='py-3'>
+      <h3>Get In Touch</h3>
       <p>If you believe in my passion in programming, I'm interested to be a part of building your applications that's
         attractive, engaging and adaptive.</p>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
+        <div className='mb-3'>
+          <label htmlFor="name" className="form-label">Name:</label>
           <input
             type="text"
             name="name"
             defaultValue={name}
             onBlur={handleChange}
+            className="form-control"
           />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
+        <div className='mb-3'>
+          <label htmlFor="email" className="form-label">Email address:</label>
           <input
             type="email"
             name="email"
             defaultValue={email}
             onBlur={handleChange}
+            className="form-control"
           />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        <div className='mb-3'>
+          <label htmlFor="message" className="form-label">Message:</label>
           <textarea
             name="message"
             rows="5"
             defaultValue={message}
             onBlur={handleChange}
+            className="form-control"
           />
         </div>
         <button type="submit">Submit</button>

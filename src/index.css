@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.favicon {
+    width: 7%;
+    height: 7%;
+}
+
+.favicon:hover {
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+.heroImage {
+    width: 30%;
+    height: 30%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.github-svg {
+    width: 8%;
+}

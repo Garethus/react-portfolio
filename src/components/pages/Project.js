@@ -1,56 +1,30 @@
-import React from "react";
-import githubImg from "../../assets/github.svg"
+import React from 'react';
+import githubSVG from '../../assets/github.svg'
 
+export default function Project({ project }) {
 
-export default function Project(props) {
+    const { name, image, repo, link, description } = project;
 
-  //Variable that hold project title
-  const title = props.title;
-
-  // Variable to build a link to the project
-  const link = props.link ? (
-    <a href={props.link} target="_blank" rel="noreferrer">
-      {title}
-    </a>
-  ) : (
-    ""
-  );
-
-  // Variable to build an image link to the project
-  const image =
-    props.link && props.image ? (
-      <a href={props.link} target="_blank" rel="noreferrer">
-        <img src={props.image} alt={title} />
-      </a>
-    ) : (
-      ""
+    return (
+        <div className='col p-3'>
+            <div className='card' key={name}>
+                <a href={link}>
+                    <img
+                        src={image}
+                        alt={name}
+                        className="card-img-top"
+                    />
+                </a>
+                <div className="card-body">
+                    <h3 className='card-title'>
+                        <a href={link}>{name}</a>{' '}
+                        <a href={repo}>
+                            <img src={githubSVG} alt='Github icon' className='github-svg' />
+                        </a>
+                    </h3>
+                    <p>{description}</p>
+                </div>
+            </div>
+        </div>
     );
-
-    // Variable to hold the project description
-    const description = props.description ? <p>{props.description}</p> : "";
-
- // Variable to build an image link to the project's GitHub repo
-    const repo = props.repo ? (
-      <p>
-        {
-          <a href={props.GitHubRepoLink} target="_blank" rel="noreferrer">
-            <img src={githubImg} alt="GitHub" />
-          </a>
-        }
-      </p>
-    ) : (
-      ""
-    );
-
-
-  return (
-    <article key={title}>
-      <header>
-        <h3>{link}</h3>
-        {repo}
-      </header>
-      {image}
-      {description}
-    </article>
-  );
 }
