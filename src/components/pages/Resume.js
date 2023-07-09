@@ -3,9 +3,9 @@ import React from 'react';
 export default function Resume() {
   return (
     <div className='py-3 text-center'>
-      <h3>My Resume</h3>
+      {/* <h3>My Resume</h3> */}
       <a href='https://www.linkedin.com/in/grethel-mae-reyes-81549516b/'>
-        <button className="btn btn-dark btn-lg my-3">View my Resume in LinkedIn and Let's Connect</button>
+        <button className="btn btn-dark btn-lg my-3">Download my Resume and Let's Connect in LinkedIn</button>
       </a>
       <div className='container'>
         <div className='row text-start py-3 gap-5'>

@@ -17,10 +17,9 @@ export default function Project({ project }) {
                 </a>
                 <div className="card-body">
                     <h3 className='card-title'>
-                        <a href={link}>{name}</a>{' '}
+                        <a href={link}>{name}</a>
                         <a href={repo}>
-                            <img src={githubSVG} alt='Github icon' className='github-svg' />
-                        </a>
+                            <i className='bi bi-github px-3' style={{ fontSize: '2rem' }}></i>                        </a>
                     </h3>
                     <p>{description}</p>
                 </div>

@@ -12,21 +12,21 @@ export default function Portfolio() {
         {
             name: "Text Editor",
             image: textEditor,
-            description: "",
+            description: "Node.js, Express.js, WebPack, WorkBox, & IndexedDB",
             link: "https://grethel-text-editor-cf2138c864a3.herokuapp.com/",
             repo: "https://github.com/Garethus/text-editor",
         },
         {
             name: "Iron-Stride",
             image: ironStride,
-            description: "",
+            description: "MySQL2, JavaScript, Handlebars, CSS, Bootstrap",
             link: "https://iron-stride.herokuapp.com/login",
             repo: "https://github.com/blancahidalgo/iron-stride",
         },
         {
             name: "Marvelites Fan Page",
             image: marvelFanPage,
-            description: "",
+            description: "HTML, CSS, jQuery, Server-Side API/Web API Materialize, ",
             link: "https://voi-jankowski.github.io/marvel/",
             repo: "https://github.com/voi-jankowski/marvel",
         },
@@ -40,7 +40,7 @@ export default function Portfolio() {
         {
             name: "Work-Day Scheduler",
             image: workDayScheduler,
-            description: "",
+            description: "HTML, CSS, jQuery, Moment.js & Bootstrap 5.2",
             link: "https://garethus.github.io/work-day-scheduler/",
             repo: "https://github.com/Garethus/work-day-scheduler",
         },
