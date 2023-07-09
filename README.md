@@ -6,8 +6,6 @@
 
 This react portfolio uses shows my knowledge of React and other latest technologies in web development. It also showcases some of the projects I've worked on.
 
-Link to the deployed app on Github: [https://]
-
 ## Table of Contents
 
 * [Technologies Used](#Technologies-Used)    
@@ -43,7 +41,7 @@ Resume Section
 
 ## Deployed App
 
-Link to the deployed app on Github: [https://]
+Link to the deployed app on Github: [https://garethus.github.io/react-portfolio/#about]
 
 ## License
 
