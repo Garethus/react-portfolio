@@ -18,7 +18,7 @@ export default function Footer() {
     ]
 
     return (
-        <div className="d-flex justify-content-evenly p-5">
+        <div className="d-flex justify-content-evenly p-3">
             {icons.map((icon) => (
             <a href={icon.link} key={icon.name} >
                 <i className={icon.name} style={{fontSize: '1.5rem'}}></i>
